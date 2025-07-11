@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advanced Vehicle Remote Control: Enhancing Precision and Optimizing Performance</title>
+		<link rel="icon" href="https://www.svgrepo.com/show/513338/presentation.svg" type="image/x-icon">
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.2/dist/reveal.css">
+    	<link rel="stylesheet" href="https://tareqkirresh.com/reveal-control/plugin.css">
+
+
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+				<section data-background="#ffffff">
+					<img src="https://upload.wikimedia.org/wikipedia/ar/1/16/Birzeit_University_logo.svg" alt="Birzeit University logo" style="height: 180px; margin: 0 auto 4rem auto; background-color: white;" class="demo-logo">
+					
+					<h4>Advanced Vehicle Remote Control: Enhancing Precision and Optimizing Performance</h4>
+					<p style="display: flex; flex-direction: column;">
+                        <div  style="display: flex; flex-direction: column;" >
+                                <small style="font-weight: 700;">Prepared by:</small>
+                                <small><a href="https://github.com/GhassanQandeel" target="_blank">Ghassan Qandeel 1212397</a></small>
+                                <small><a href="https://github.com/AbbasNassar" target="_blank">Abbas Nassar 1210482</a></small>
+                                <small><a href="https://github.com/MohammadAtaya612" target="_blank">Mohammad Ataya 1211555</a></small>
+                        </div>
+                        <div  style="display: flex; flex-direction: column;" >
+                                <small style="font-weight: 700;">Supervised by:</small>
+                                <small><a href="https://www.birzeit.edu/en/faculty-staff/alhareth-zyoud" target="_blank">Dr. Alhareth Zayoud</a></small>
+                        </div>
+                         <div  style="display: flex; flex-direction: column;" >
+                                <small style="font-weight: 700;">Section: 16</small>
+                        </div>
+                    </p>
+
+				</section>
+
+                <section data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 100%;">
+                    <section data-background="#ffffff" display="flex" style="justify-content: start; align-items: center;  width: 100%; height: 75%;">
+                    <h4 style="width: fit-content; height: fit-content;">Introduction</h4>
+                    <ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+  					<li><strong>Project Focus:</strong> Design and implement a modern <em>remote control system</em> for vehicles.</li>
+  					<li><strong>Key Goals:</strong> Address <strong>security</strong>, <strong>precision</strong>, and <strong>usability</strong> challenges in vehicle control.</li>
+  					<li><strong>Core Components:</strong>
+   		 			<ul>
+      				<li><strong>ESP32 microcontroller</strong></li>
+      				<li><strong>DC motors</strong>, <strong>sensors</strong>, and <strong>LEDs</strong> to simulate an <strong>ECU (Electronic Control Unit)</strong></li>
+    				</ul>
+  					</li>
+					</ul>
+					</section> 
+					<section data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 75%;">
+					<h4 style="width: fit-content; height: fit-content;">Introduction</h4>
+					<ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+					<li><strong>System Integration:</strong>
+    				<ul>
+      				<li>Connected to a <strong>cloud-based backend server</strong></li>
+      				<li>Linked with a <strong>mobile application</strong> for user interaction</li>
+    				</ul>
+  					</li>
+  					<li><strong>Main Features:</strong>
+    				<ul>
+      				<li><strong>Real-time monitoring</strong> of vehicle systems</li>
+      				<li><strong>Remote control</strong> capabilities through the app</li>
+   					</ul>
+  					</li>
+					</ul>
+					</section>
+
+                </section>
+
+				<section data-background="#ffffff" display="flex" style="justify-content: start; align-items: center;  width: 100%; height: 100%;">
+						<section data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 75%;">
+							<h4 style="width: fit-content; height: fit-content;">Motivation</h4>
+							<ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+  <li><strong>Importance:</strong> Advanced vehicle remote control systems are becoming increasingly vital due to the integration of <strong>smart technology</strong> in the automotive industry.</li>
+  <li><strong>Technological Context:</strong> Driven by rapid advances in:
+    <ul>
+      <li><strong>Internet of Things (IoT)</strong></li>
+      <li><strong>Communication technologies</strong></li>
+      <li><strong>Artificial Intelligence (AI)</strong></li>
+    </ul>
+  </li>
+  <li><strong>Capabilities:</strong> These technologies enable <strong>remote vehicle operation</strong> with:
+    <ul>
+      <li><strong>Enhanced precision</strong></li>
+      <li><strong>Improved safety</strong></li>
+      <li><strong>Better performance</strong></li>
+    </ul>
+  </li>
+  
+</ul>
+						</section>
+						<section data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 75%;">
+							<h4 style="width: fit-content; height: fit-content;">Motivation</h4>
+							<ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+<li><strong>Project Goal:</strong> Leverage these advancements to improve:
+    <ul>
+      <li><strong>Vehicle operation</strong></li>
+      <li><strong>Security</strong></li>
+      <li><strong>User control and convenience</strong></li>
+    </ul>
+  </li>
+  <li><strong>Motivation:</strong> Respond to the growing need for <strong>secure, real-time vehicle management</strong> within:
+    <ul>
+      <li><strong>Smart cities</strong></li>
+      <li><strong>Advanced transportation systems</strong></li>
+    </ul>
+  </li>
+							</ul>
+
+						</section>
+				</section>
+
+                
+				<!-- Example of nested vertical slides -->
+				<section display: flex; data-background="#ffffff">
+					<section>
+						<h2>Why?</h2>
+                        <img src="https://www.svgrepo.com/show/434276/thinking-face.svg" alt="Why Emogi" width="30%" height="30%" style="background-color: white;">
+					</section>
+					<section>
+						<h3>Remote Vehicle Start and Climate Control</h3>
+						<p style="font-size: 30px;">Abbas can start his vehicle remotely using the mobile app, allowing the car’s air conditioning or heating system to create a comfortable interior before he gets in. This feature is especially helpful for Abbas during extreme weather, ensuring comfort and saving him time.</p>
+					</section>
+					<section>
+						<h3>Real-Time Security Alerts and Remote Locking</h3>
+						<p style="font-size: 30px;">Ghassan receives instant notifications on his phone if suspicious activity is detected, such as unauthorized door access or movement. He can immediately respond by remotely locking the doors or disabling the ignition, protecting his vehicle from theft or unauthorized use.</p>
+					</section>
+                    <section>
+						<h3>Live Vehicle Health Monitoring</h3>
+						<p style="font-size: 30px;">Mohammad is able to monitor real time data about his car’s status including fuel level, battery health, tire pressure, and maintenance alerts directly through the mobile application. This allows Mohammad to proactively address issues, reduce the risk of breakdowns, and schedule maintenance efficiently.</p>
+					</section>
+				</section>
+
+								<section display: flex; data-background="#ffffff">
+					<section style="width: 100%; height: 75%; display: flex; justify-content: start; align-items: start;">
+						<h2>Overview and Background</h2>
+                        <img src="https://www.svgrepo.com/show/428731/creative-knowledge-lightbulb.svg" alt="Knowledge" width="40%" height="40%" style="background-color: white;">
+					</section>
+					<section style="width: 100%; height: 70%; display: flex; justify-content: start; align-items: start;">
+						<h3 >Electronic Control Unit</h3>
+						<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; column-gap: 10%;">
+						<ul style="font-size: 30px;">
+							<li>What is an ECU?</li>
+							<li>Main Functions</li>
+							<li>Communication</li>
+							<li>Benefits</li>
+							<li>Role in Smart Vehicles</li>
+						</ul>
+						<img src="https://www.researchgate.net/publication/336745978/figure/fig2/AS:864396091871238@1583099496926/Schematic-diagram-of-the-ECUs-configuration.png" alt="Electronic Control Unit" style="width: 50%; height: 50%;">
+						</div>
+						</section>
+                    <section style="width: 100%; height: 70%; display: flex; justify-content: start; align-items: start;">
+						<h3 >ESP32 Microcontroller</h3>
+						<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; column-gap: 10%;">
+						<ul style="font-size: 30px;">
+							<li>What is ESP32?</li>
+							<li>Main Features</li>
+							<li>Connectivity</li>
+							<li>Flexibility</li>
+							<li>Why use ESP32 in our project?</li>
+						</ul>
+						<img src="img/ESP32-NODEMCU-ESP-32S-Kit-pinout-low-res-mischianti-1024x599.jpg" alt="ESP32 Microcontroller" style="width: 50%; height: 50%;">
+						</div>
+					</section>
+					<section style="width: 100%; height: 70%; display: flex; justify-content: space-between; align-items: start;">
+						<h3 >DC Motors</h3>
+						<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+						<ul style="font-size: 30px;">
+							<li>What is a DC Motor?</li>
+							<li>Main Function</li>
+							<li>Control</li>
+							<li>Benefits</li>
+							<li>Role in Our Project</li>
+						</ul>
+						<img src="https://naivotech.com/wp-content/uploads/2024/01/DC-Motor.jpg" alt="DC Motors" style="width: 30%; height: 30%;">
+						</div>
+					</section>
+					
+					<section style="width: 100%; height: 70%; display: flex; justify-content: start; align-items: start;">
+						<h3>Sensors (Temperature, Tire Pressure, Oxygen)</h3>
+						<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+						<ul style="font-size: 30px;">
+							<li>What are Sensors?</li>
+							<li>Temperature Sensor</li>
+							<li>Tire Pressure Sensor</li>
+							<li>Oxygen Sensor</li>
+							<li>Why Are These Sensors Important?</li>
+						</ul>
+						<img src="https://adiy.in/wp-content/uploads/2022/09/ntc-1.jpg" alt="DC Motors" style="width: 30%; height: 30%;">
+						</div>
+					</section>
+				</section>
+		
+				<section data-background="#ffffff" style="width: 100%; height: 75%; display: flex; justify-content: start; align-items: start;">
+					<h4 style="text-align: left;">System Architecture</h4>
+					<img src="img/SystemArchitecture (1).svg" alt="System Architecture" style="width: 100%; height: 100%; ">
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section display: flex; data-background="#ffffff">
+					<section>
+						<h2>Future Work</h2>
+                        <img src="img/coming-soon.png" alt="Coming soon " width="50%" height="50%" style="background-color: white;">
+					</section>
+					<section>
+						<h3>Voice Recognition</h3>
+						<p style="font-size: 30px;">Integrate voice recognition technology to enable hands-free control of vehicle systems. This will allow users to operate functions such as media, navigation, and climate control using spoken commands, improving safety and user experience by reducing manual interactions.</p>
+					</section>
+					 <section>
+						<h3>Proof of Concept Implementation</h3>
+						<p style="font-size: 30px;">In the next phase, we will apply our system on a real vehicle by enabling remote engine start, which helps users protect their cars engine even when traveling abroad.</p>
+					</section>
+					 <section>
+						<h3>Advanced Safety Features</h3>
+						<p style="font-size: 30px;">We will integrate an oxygen sensor to monitor the air quality inside the car. This feature is designed to protect children who may be accidentally left inside the vehicle; if the oxygen level drops below a safe threshold, the system will automatically alert the relevant authorities, potentially saving lives.</p>
+					</section>
+                    <section>
+						<h3>Secure Communication with ECC</h3>
+						<p style="font-size: 30px;">As future work, we plan to implement a secure message communication protocol using Elliptic Curve Cryptography (ECC). This will introduce a two-level authentication scheme, ensuring only authorized vehicles and controllers can communicate. The approach will protect against common cyberattacks.</p>
+					</section>
+				</section>
+
+				<section data-background="#ffffff" style="width: 100%; height: 100%; display: flex; justify-content: start; align-items: start;">
+					<section  data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 75%;">
+						<h4 style="text-align: left;">Conclusion</h4>
+						<ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+  <li><strong>Objective:</strong> We will build a strong foundation for an advanced vehicle remote control system that addresses key challenges in automotive technology.</li>
+  <li><strong>System Integration:</strong> The system will integrate:
+    <ul>
+      <li><strong>ESP32 hardware</strong></li>
+      <li><strong>Cloud infrastructure</strong></li>
+      <li><strong>Mobile applications</strong></li>
+    </ul>
+  </li>
+  <li><strong>Expected Features:</strong> The system will offer:
+    <ul>
+      <li><strong>Secure</strong> remote vehicle management</li>
+      <li><strong>Scalable</strong> architecture</li>
+      <li><strong>User-friendly</strong> interface</li>
+    </ul>
+  </li>
+</ul>
+</section>
+					<section  data-background="#ffffff" display="flex" style="justify-content: start; align-items: start;  width: 100%; height: 75%;">
+						<h4 style="text-align: left;">Conclusion</h4>
+						<ul style="font-size: 26px; text-align: left; width: 100%; height: 100%; display: flex; flex-direction: column; row-gap: 20px;">
+							<li><strong>Architecture:</strong> A multi-layered design will enable:
+    <ul>
+      <li><strong>Enhanced security</strong></li>
+      <li><strong>Real-time monitoring</strong></li>
+      <li><strong>Remote control</strong> functionality</li>
+    </ul>
+  </li>
+  <li><strong>Development Approach:</strong> Through a structured process, we aim to demonstrate that combining:
+    <ul>
+      <li><strong>IoT</strong></li>
+      <li><strong>Communication technologies</strong></li>
+      <li><strong>AI/ML techniques</strong></li>
+    </ul>
+    can significantly improve vehicle performance and security.
+  </li>
+  <li><strong>Target Applications:</strong> The proposed solution will be suitable for:
+    <ul>
+      <li><strong>Smart cities</strong></li>
+      <li><strong>Personal use</strong></li>
+    </ul>
+  </li>
+						</ul>
+					</section>
+				</section>
+
+
+				<!-- Step 1: Icons in the center -->
+				<section data-auto-animate data-background="#ffffff">
+				<h2 style="color: #337ccf; margin-bottom: 40px;">Thank You</h2>
+				<div class="r-hstack justify-center" style="gap: 50px;">
+
+					<div data-id="icon-car">
+					<!-- Car SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70"><rect x="10" y="35" width="50" height="20" rx="8" fill="#009688"/><circle cx="20" cy="58" r="7" fill="#333"/><circle cx="50" cy="58" r="7" fill="#333"/><rect x="20" y="25" width="30" height="18" rx="7" fill="#4fc3f7"/></svg>
+					</div>
+					<div data-id="icon-ship">
+					<!-- Ship SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Ship hull -->
+					<ellipse cx="35" cy="50" rx="28" ry="8" fill="#4fc3f7"/>
+					
+					<!-- Main ship body -->
+					<rect x="15" y="35" width="40" height="20" rx="5" fill="#009688"/>
+					
+					<!-- Upper deck -->
+					<rect x="20" y="25" width="30" height="15" rx="3" fill="#00acc1"/>
+					
+					<!-- Ship cabin/bridge -->
+					<rect x="25" y="15" width="20" height="15" rx="2" fill="#0097a7"/>
+					
+					<!-- Mast -->
+					<rect x="34" y="8" width="2" height="25" fill="#795548"/>
+					
+					<!-- Sail -->
+					<path d="M36 12 L50 12 L50 25 L36 25 Z" fill="#fff"/>
+					
+					<!-- Flag -->
+					<rect x="36" y="8" width="8" height="5" fill="#f44336"/>
+					
+					<!-- Portholes -->
+					<circle cx="22" cy="32" r="2" fill="#263238"/>
+					<circle cx="30" cy="32" r="2" fill="#263238"/>
+					<circle cx="38" cy="32" r="2" fill="#263238"/>
+					<circle cx="46" cy="32" r="2" fill="#263238"/>
+					</svg>
+					</div>
+
+					<div data-id="icon-jet">
+					<!-- Jet SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Main wing body (flying wing design) -->
+					<path d="M35 20 L60 35 L58 45 L45 50 L35 48 L25 50 L12 45 L10 35 L35 20 Z" fill="#607d8b"/>
+					
+					<!-- Central fuselage -->
+					<ellipse cx="35" cy="38" rx="15" ry="8" fill="#546e7a"/>
+					
+					<!-- Cockpit -->
+					<ellipse cx="35" cy="30" rx="6" ry="4" fill="#37474f"/>
+					
+					<!-- Engine intakes -->
+					<ellipse cx="25" cy="42" rx="4" ry="3" fill="#263238"/>
+					<ellipse cx="45" cy="42" rx="4" ry="3" fill="#263238"/>
+					
+					<!-- Wing tips -->
+					<circle cx="60" cy="35" r="3" fill="#455a64"/>
+					<circle cx="10" cy="35" r="3" fill="#455a64"/>
+					
+					<!-- Exhaust ports -->
+					<rect x="30" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					<rect x="37" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					
+					<!-- Wing details -->
+					<path d="M20 38 L30 40 L30 44 L20 42 Z" fill="#78909c"/>
+					<path d="M40 40 L50 38 L50 42 L40 44 Z" fill="#78909c"/>
+					</svg>
+					
+					</div>
+				</div>
+				</section>
+
+				<!-- Step 2: Animate all icons to the left -->
+				<section data-auto-animate data-background="#ffffff">
+				<h2 style="color: #337ccf; margin-bottom: 40px;">Stay lazy </h2>
+				<div class="r-hstack" style="gap: 40px; justify-content: flex-start;">
+					<div data-id="icon-car" style="margin-left: 10px;">
+					<!-- Car SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70"><rect x="10" y="35" width="50" height="20" rx="8" fill="#009688"/><circle cx="20" cy="58" r="7" fill="#333"/><circle cx="50" cy="58" r="7" fill="#333"/><rect x="20" y="25" width="30" height="18" rx="7" fill="#4fc3f7"/></svg>					
+					
+					</div>
+					<div data-id="icon-ship">
+					<!-- Ship SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Ship hull -->
+					<ellipse cx="35" cy="50" rx="28" ry="8" fill="#4fc3f7"/>
+					
+					<!-- Main ship body -->
+					<rect x="15" y="35" width="40" height="20" rx="5" fill="#009688"/>
+					
+					<!-- Upper deck -->
+					<rect x="20" y="25" width="30" height="15" rx="3" fill="#00acc1"/>
+					
+					<!-- Ship cabin/bridge -->
+					<rect x="25" y="15" width="20" height="15" rx="2" fill="#0097a7"/>
+					
+					<!-- Mast -->
+					<rect x="34" y="8" width="2" height="25" fill="#795548"/>
+					
+					<!-- Sail -->
+					<path d="M36 12 L50 12 L50 25 L36 25 Z" fill="#fff"/>
+					
+					<!-- Flag -->
+					<rect x="36" y="8" width="8" height="5" fill="#f44336"/>
+					
+					<!-- Portholes -->
+					<circle cx="22" cy="32" r="2" fill="#263238"/>
+					<circle cx="30" cy="32" r="2" fill="#263238"/>
+					<circle cx="38" cy="32" r="2" fill="#263238"/>
+					<circle cx="46" cy="32" r="2" fill="#263238"/>
+					</svg>
+					
+					</div>
+
+					<div data-id="icon-jet">
+					<!-- Jet SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Main wing body (flying wing design) -->
+					<path d="M35 20 L60 35 L58 45 L45 50 L35 48 L25 50 L12 45 L10 35 L35 20 Z" fill="#607d8b"/>
+					
+					<!-- Central fuselage -->
+					<ellipse cx="35" cy="38" rx="15" ry="8" fill="#546e7a"/>
+					
+					<!-- Cockpit -->
+					<ellipse cx="35" cy="30" rx="6" ry="4" fill="#37474f"/>
+					
+					<!-- Engine intakes -->
+					<ellipse cx="25" cy="42" rx="4" ry="3" fill="#263238"/>
+					<ellipse cx="45" cy="42" rx="4" ry="3" fill="#263238"/>
+					
+					<!-- Wing tips -->
+					<circle cx="60" cy="35" r="3" fill="#455a64"/>
+					<circle cx="10" cy="35" r="3" fill="#455a64"/>
+					
+					<!-- Exhaust ports -->
+					<rect x="30" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					<rect x="37" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					
+					<!-- Wing details -->
+					<path d="M20 38 L30 40 L30 44 L20 42 Z" fill="#78909c"/>
+					<path d="M40 40 L50 38 L50 42 L40 44 Z" fill="#78909c"/>
+					</svg>
+					
+					</div>
+					
+				</div>
+				<!-- Big thank you appears with animation room on right -->
+				</section>
+
+				<!-- Step 3: Show big Thank You! on the right -->
+				<section data-auto-animate data-background="#ffffff">
+				<div class="r-hstack" style="gap: 50px; align-items: center; justify-content: flex-start;">
+					<div>
+					<div data-id="icon-car" style="margin-bottom: 12px;">
+						<svg width="70" height="70" viewBox="0 0 70 70"><rect x="10" y="35" width="50" height="20" rx="8" fill="#009688"/><circle cx="20" cy="58" r="7" fill="#333"/><circle cx="50" cy="58" r="7" fill="#333"/><rect x="20" y="25" width="30" height="18" rx="7" fill="#4fc3f7"/></svg>
+						
+					</div>
+					<div data-id="icon-ship" style="margin-bottom: 12px;">
+					<!-- Ship SVG -->
+					 <!-- Ship SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Ship hull -->
+					<ellipse cx="35" cy="50" rx="28" ry="8" fill="#4fc3f7"/>
+					
+					<!-- Main ship body -->
+					<rect x="15" y="35" width="40" height="20" rx="5" fill="#009688"/>
+					
+					<!-- Upper deck -->
+					<rect x="20" y="25" width="30" height="15" rx="3" fill="#00acc1"/>
+					
+					<!-- Ship cabin/bridge -->
+					<rect x="25" y="15" width="20" height="15" rx="2" fill="#0097a7"/>
+					
+					<!-- Mast -->
+					<rect x="34" y="8" width="2" height="25" fill="#795548"/>
+					
+					<!-- Sail -->
+					<path d="M36 12 L50 12 L50 25 L36 25 Z" fill="#fff"/>
+					
+					<!-- Flag -->
+					<rect x="36" y="8" width="8" height="5" fill="#f44336"/>
+					
+					<!-- Portholes -->
+					<circle cx="22" cy="32" r="2" fill="#263238"/>
+					<circle cx="30" cy="32" r="2" fill="#263238"/>
+					<circle cx="38" cy="32" r="2" fill="#263238"/>
+					<circle cx="46" cy="32" r="2" fill="#263238"/>
+					</svg>
+
+					</div>
+					<div data-id="icon-jet" style="margin-bottom: 12px;">
+					<!-- Jet SVG -->
+					<svg width="70" height="70" viewBox="0 0 70 70">
+					<!-- Main wing body (flying wing design) -->
+					<path d="M35 20 L60 35 L58 45 L45 50 L35 48 L25 50 L12 45 L10 35 L35 20 Z" fill="#607d8b"/>
+					
+					<!-- Central fuselage -->
+					<ellipse cx="35" cy="38" rx="15" ry="8" fill="#546e7a"/>
+					
+					<!-- Cockpit -->
+					<ellipse cx="35" cy="30" rx="6" ry="4" fill="#37474f"/>
+					
+					<!-- Engine intakes -->
+					<ellipse cx="25" cy="42" rx="4" ry="3" fill="#263238"/>
+					<ellipse cx="45" cy="42" rx="4" ry="3" fill="#263238"/>
+					
+					<!-- Wing tips -->
+					<circle cx="60" cy="35" r="3" fill="#455a64"/>
+					<circle cx="10" cy="35" r="3" fill="#455a64"/>
+					
+					<!-- Exhaust ports -->
+					<rect x="30" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					<rect x="37" y="48" width="3" height="4" rx="1" fill="#ff5722"/>
+					
+					<!-- Wing details -->
+					<path d="M20 38 L30 40 L30 44 L20 42 Z" fill="#78909c"/>
+					<path d="M40 40 L50 38 L50 42 L40 44 Z" fill="#78909c"/>
+					</svg>	
+					
+					</div>
+					</div>
+					<div>
+					<h2 style="
+						font-size: 70px;
+						color: #337ccf;
+						font-weight: bold;
+						margin: 0;
+						text-align: left;">
+						Be safe !
+					</h2>
+					</div>
+				</div>
+				</section>
+			</div>
+
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js" integrity="sha512-TC5IA+BA/5YPBb/MJyk97ypzvXYUIlAksfuxlUXlhD7cM7y/stM4JuytDeYJlsiKxmRDV5krDyuugOoMOHwyJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdn.jsdelivr.net/gh/TareqK/reveal-control@master/dist/reveal-control.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/math/math.min.js" integrity="sha512-skPZpuRwuUAnF9iEEFBXc4zJaucKcHUDgY1wDBTv0ILy82C2gn8MJsbcinzj2u8r/iZjD/78HRgw2/n//poOhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/math/katex.min.js" integrity="sha512-OvY0Rdcp6TwXhJROqoMdOTjt0MrF5lnpxEsT0UHgawPoMPlQD5OCsd2f8X8Lfht63RvfrWqmJfmXikC+jjEejA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/notes/notes.min.js" integrity="sha512-MZ7Ehjbh2soaeCZJGaw6vBNAa7+eunl0SUmRPNESchLlboH73lHLEeUa6pZJ2Pcui4NcpDFatr6M+VlcmaH1QA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/zoom/zoom.min.js" integrity="sha512-Gras1ky8LoFJWwMTxBWyN2wfHfnJXQlyhHFH3M+m/jHe297DZsrQxg9P6Kxka6waxl4NeeQzietoFlCxL7x10g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script>
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            touch: true,
+            transition: 'slide',
+            hash: true,
+            revealControl: {
+                url: "wss://reveal-control.kisoft.me/reveal-control"
+            },
+            plugins: [RevealHighlight, RevealMath.KaTeX, RevealNotes, RevealZoom, RevealControl]
+        });
+
+		</script>
+
+	</body>
+</html>
